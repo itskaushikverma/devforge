@@ -2,7 +2,7 @@ name: Added README
 
 on:
   schedule:
-    - cron: "0 0 */2 * *"
+    - cron: '0 0 */2 * *'
   workflow_dispatch:
 
 permissions:
@@ -22,15 +22,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: '20'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Run script
         run: node frontend/update-readme.js
-        
+
       - name: Commit and Push
         run: |
           git config user.name "github-actions"

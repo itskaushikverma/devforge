@@ -2,7 +2,6 @@
   "name": "devforge",
   "version": "1.0.0",
   "description": "Reusable full-stack project generator",
-
   "scripts": {
     "lint": "npm run lint --prefix frontend && npm run lint --prefix backend",
     "format": "prettier --write .",
